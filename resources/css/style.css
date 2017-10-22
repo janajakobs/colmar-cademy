@@ -77,6 +77,7 @@ header ul li:visited {
     justify-content: space-around;
     height: 4rem;
     margin: 0.2rem 0.2rem;
+    width: auto;
   }
 }
 
@@ -263,15 +264,15 @@ button span {
 }
 
 /*  color change */
-.text a:link {
+.text p:link {
   color: #5A585F;
 }
 
-.text a:visited {
+.text p:visited {
  color: #CCC4CC;
 }
 
- .text p a:hover {
+ .text a:hover {
   color: #7D006D;
   text-decoration: underline;
 }
@@ -308,19 +309,23 @@ button span {
   }
 
   .mobile-about #photo {
+    display: flex;
+    justify-content: center;
     width: 90%;
     margin: 1rem;
+    padding-left: 0.2rem;
   }
 
   .mobile-about .info-mobile .text {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
   }
 
   .info-mobile {
     flex-direction: column;
     border: none;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-top: 1rem;
+    justify-content: center;
   }
 
   /*  color change */
@@ -449,19 +454,28 @@ button span {
     display: none;
   }
 
-  .learning {
-    background-color: white;
-    border-top: 0.1rem solid whitesmoke;
+  #start {
+    display: none;
   }
 
   .learning-mobile {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
     padding-bottom: 2rem;
     justify-content: center;
+    background-color: white;
     width: 100%;
     border-bottom: 0.1rem solid whitesmoke;
+  }
+
+  .learning-mobile h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: "Montserrat";
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
   }
 
   .learning-mobile h3{
@@ -556,6 +570,10 @@ button span {
     display: none;
   }
 
+  .thesis {
+    width: auto;
+  }
+
   .thesis .video-section {
     width: 100%;
     margin-bottom: 0;
@@ -564,14 +582,14 @@ button span {
   .thesis .video-text {
     display: none;
   }
-
+}
 /* Thesis section END */
 
 
 
 /* Footer DESKTOP */
 
-footer {
+.footer {
   display: flex;
   width: 100%;
 }
@@ -593,15 +611,34 @@ footer {
 }
 
 /* Links - color change */
-/*.terms a:link {
+.terms span:link {
   color: #242126;
 }
 
-.terms a:visited {
+.terms span:visited {
  color: #CCC4CC;
 }
 
-.terms a:hover {
+.terms span:hover {
   color: #7D006D;
   text-decoration: underline;
-} /*
+}
+
+ /* footer MOBILE */
+ @media only screen and (max-width: 480px) {
+  .footer-text .terms {
+    display: none;
+  }
+
+  .footer-text {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer .copyrights {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+  }
+}

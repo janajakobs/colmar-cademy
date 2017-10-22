@@ -1,0 +1,607 @@
+/* Universal code */
+html {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Open Sans", Verdana, sans-serif;
+  color: #242126;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header DESKTOP */
+
+header .desktop  {
+  display: flex;
+  height: 4rem;
+  margin: 0 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mobile-header {
+  display: none;
+}
+
+header #bold {
+  font-weight: bold;
+  color: black;
+}
+
+header span {
+  letter-spacing: 0.2rem;
+  height: 4.5rem;
+  margin-top: 3.5rem;
+  color: #CCC4CC;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 1rem;
+}
+
+/* Links - color change */
+
+
+header ul li:visited {
+ color: #CCC4CC;
+}
+
+ header ul li:hover {
+  color: #7D006D;
+  text-decoration: underline;
+}
+
+/* Header MOBILE */
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+   header .desktop .flex .nav {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    margin: 0.2rem 0.2rem;
+  }
+}
+
+/* Banner DESKTOP */
+.banner .flex {
+  display: flex;
+  background-color: #CCC4CC;
+  justify-content: center;
+  height: 32rem;
+}
+
+.banner-image {
+  display: flex;
+  width: 60%;
+}
+
+.banner-image img {
+  height: 90%;
+  width: 90%;
+  margin: 2rem 1.5rem;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.banner-text h1 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+}
+
+.banner-text h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.banner-text button {
+  background-color: #5A585F;
+  border: none;
+  padding: 1rem 1em;
+  text-align: center;
+  width: 65%;
+}
+
+button span {
+  color: white;
+  font-size: 1rem;
+  weight: lighter;
+}
+
+/*button color change */
+.banner-text button:hover {
+  background-color: #2A0022;
+  transition: background-color 400ms ease-in-out 0s
+}
+
+/* MOBILE version Banner */
+@media only screen and (max-width: 480px) {
+  .banner .flex {
+    flex-direction: column;
+    height: 36rem;
+  }
+
+  .banner-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .banner-image img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .banner-text {
+    width: 100%;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+
+  .banner-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .banner-text h3 {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
+/* Mobile Banner END */
+
+
+/* About part - DESKTOP */
+.about .flex {
+  display: flex;
+}
+
+/* main part */
+.main-part {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.main-part img {
+  width: 93.5%;
+}
+
+.main-part h2, p, span {
+  width: 93.5%;
+}
+
+.main-part h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: ;
+  font-family: "Montserrat";
+}
+
+.main-part p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+.main-part span {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* side part */
+
+.side-part {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 0.1rem solid whitesmoke;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-family: "Montserrat";
+}
+
+.text span, p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.text p {
+  font-weight: bold;
+}
+
+.text a {
+  color: #5A585F;
+  text-decoration: none;
+}
+
+/*  color change */
+.text a:link {
+  color: #5A585F;
+}
+
+.text a:visited {
+ color: #CCC4CC;
+}
+
+ .text p a:hover {
+  color: #7D006D;
+  text-decoration: underline;
+}
+
+.side-part .info:hover {
+  background-color: #CCC4CC;
+  transition: background-color 400ms ease-in 0s;
+}
+
+#photo {
+  width: 35%;
+  height: 100%;
+  margin: 1rem;
+}
+
+.mobile-about {
+  display: none;
+}
+
+/* About Mobile version */
+@media only screen and (max-width: 480px) {
+  .main-part {
+    display: none;
+  }
+
+  .side-part {
+    display: none;
+  }
+
+  .mobile-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-about #photo {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .mobile-about .info-mobile .text {
+    margin-left: 1rem;
+  }
+
+  .info-mobile {
+    flex-direction: column;
+    border: none;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  /*  color change */
+   .text a:link {
+    color: #5A585F;
+  }
+
+  .text a:visited {
+   color: #CCC4CC;
+  }
+
+   .text a:hover {
+    color: #7D006D;
+    text-decoration: underline;
+  }
+
+  .smobile-about .info-mobile:hover {
+    background-color: #CCC4CC;
+    transition: background-color 400ms ease-in 0s;
+  }
+}
+
+
+/* Learning part DESKTOP */
+.learning {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #CCC4CC;
+}
+
+.learning-mobile {
+  display: none;
+}
+
+#start {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+#start h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat";
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 4.5rem;
+}
+
+.section {
+  width: 18rem;
+  background-color: white
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 9rem;
+  overflow-wrap: normal;
+}
+
+.section-text {
+  width: inherit;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section img {
+  height: auto;
+  width: 18rem;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  font-family: "Montserrat";
+}
+
+.section span {
+  padding-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* margins */
+.software {
+  margin-right: 2rem;
+}
+
+.art {
+  margin-right: 2rem;
+}
+
+.data {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.business {
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.marketing {
+  margin-top: 2rem;
+}
+
+/* color changes - hover */
+.section:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #CCC4CC;
+  transition: background-color 100ms ease-in-out 0s
+}
+
+/* Learning part MOBILE */
+@media only screen and (max-width: 480px) {
+  .learning .sections {
+    display: none;
+  }
+
+  .learning {
+    background-color: white;
+    border-top: 0.1rem solid whitesmoke;
+  }
+
+  .learning-mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 0.1rem solid whitesmoke;
+  }
+
+  .learning-mobile h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Montserrat";
+    padding: 1.5rem 2rem;
+    text-align: left;
+    margin: 0.5rem 1rem;
+    background-color: #CCC4CC;
+  }
+
+  /* button color change */
+  .learning-mobile h3:hover {
+    background-color: #2A0022;
+    color: #CCC4CC;
+    transition: background-color 400ms ease-in-out 0s;
+  }
+}
+/* Mobile version DONE */
+
+/* Learning section END */
+
+
+/* Thesis section DESKTOP */
+.thesis {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.1rem solid whitesmoke;
+}
+
+.content {
+  display: flex;
+}
+
+#thesis-exhibit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+#thesis-exhibit h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+  font-family: "Montserrat";
+}
+
+/* Video section */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-top: 2rem;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+}
+
+.video-section .video-text {
+  width: 95%;
+}
+
+.video-text h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top:1.5rem;
+  font-family: "Montserrat";
+}
+
+.video-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* side part */
+.now-then .text {
+  width: 100%;
+}
+
+/* Mobile version */
+@media only screen and (max-width: 480px) {
+  .thesis .side-part {
+    display: none;
+  }
+
+  .thesis .video-section {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .thesis .video-text {
+    display: none;
+  }
+
+/* Thesis section END */
+
+
+
+/* Footer DESKTOP */
+
+footer {
+  display: flex;
+  width: 100%;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.copyrights span {
+  letter-spacing: 0.2;
+}
+
+.terms span {
+  padding-left: 0.5rem;
+  letter-spacing: 0.2;
+}
+
+/* Links - color change */
+/*.terms a:link {
+  color: #242126;
+}
+
+.terms a:visited {
+ color: #CCC4CC;
+}
+
+.terms a:hover {
+  color: #7D006D;
+  text-decoration: underline;
+} /*
